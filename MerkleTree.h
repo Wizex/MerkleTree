@@ -53,7 +53,7 @@ public:
 
     // Creates a Merkle tree with serialized data and sizes in bytes of serialized data.
     // We need here serialized data, because we want contain all types of data in a tree.
-    void create_merkle_tree(data_container data);
+    void create_merkle_tree(data_container&& data);
 
     // Returns all hashes that tree contains in preorder way.
     void get_all_hashes_preorder(std::vector<std::string>& hashes) const;

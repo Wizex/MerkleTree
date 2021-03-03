@@ -84,7 +84,7 @@ unique_ptr<merkle_tree::node> merkle_tree::create_node(data_container&& data){
     return new_node;
 }
 
-void merkle_tree::create_merkle_tree(data_container data){
+void merkle_tree::create_merkle_tree(data_container&& data){
     root = create_node(move(data));
 }
 
